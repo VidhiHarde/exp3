@@ -1,0 +1,116 @@
+/* Reset some default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Form Container Styling */
+.form-container {
+    width: 100%;
+    max-width: 450px;
+    padding: 40px;
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient Background */
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    text-align: center;
+    color: #fff;
+}
+
+/* Heading Styling */
+h2 {
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/* Label Styling */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+}
+
+/* Input Styling */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #fff;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+/* Input Hover Effect */
+input[type="text"]:hover,
+input[type="password"]:hover,
+input[type="email"]:hover,
+select:hover {
+    border-color: #ff7e5f;
+}
+
+/* Focus Effect on Inputs */
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+select:focus {
+    border-color: #feb47b;
+    outline: none;
+    box-shadow: 0 0 8px rgba(254, 180, 123, 0.5);
+}
+
+/* Radio Button Styling */
+input[type="radio"] {
+    margin: 0 10px 0 0;
+}
+
+/* Gender Group Styling */
+.gender-group {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 20px;
+}
+
+/* Button Styling */
+button {
+    width: 100%;
+    padding: 14px;
+    background-color: #ff7e5f;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button Hover Effect */
+button:hover {
+    background-color: #feb47b;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 600px) {
+    .form-container {
+        padding: 25px;
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}
